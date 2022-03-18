@@ -48,8 +48,8 @@ Name               | Type       | Default                             | Descript
 ------------------ | ---------- | ----------------------------------- | -----------
 lanug              | *string*   | *'auto'*                            | The autodetection is based on the LANG attribute of the HTML tag
 callback           | *function* | *'function(isAccepted){}'*          | Essential fn to call the script that are using cookies
-template           | *string*   | See [jquery.serialcookie.js](https://github.com/kevinmeunier/jquery-serialcookie/blob/main/dist/jquery.serialcookie.js | The HTML template where the translations will be injected
-translations       | *object*   | See [jquery.serialcookie.js](https://github.com/kevinmeunier/jquery-serialcookie/blob/main/dist/jquery.serialcookie.js | The translations in each language
+template           | *string*   | See [jquery.serialcookie.js](https://github.com/kevinmeunier/jquery-serialcookie/blob/main/dist/jquery.serialcookie.js) | The HTML template where the translations will be injected
+translations       | *object*   | See [jquery.serialcookie.js](https://github.com/kevinmeunier/jquery-serialcookie/blob/main/dist/jquery.serialcookie.js) | The translations in each language
 
 
 ## Bugs / Feature request
