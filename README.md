@@ -1,4 +1,3 @@
-
 # jQuery serialcookie - Lightweight cookie consent banner
 
 ## About jQuery serialcookie
