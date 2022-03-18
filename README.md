@@ -15,7 +15,7 @@ jQuery serialcookie has been tested in: IE, Edge, Chrome (mobile included), Fire
 ## Self-Hosted
 [Download](https://github.com/kevinmeunier/jquery-serialcookie/archive/master.zip) and save one of two available files to include serialcookie to your page, either the [development](https://github.com/kevinmeunier/jquery-serialcookie/blob/main/dist/jquery.serialcookie.js) or the [minified](https://github.com/kevinmeunier/jquery-serialcookie/blob/main/dist/jquery.serialcookie.min.js) version. Also, you can visit the [project page](https://github.meunierkevin.com/jquery-serialcookie/) to copy what you need.
 ```HTML
-<script src="jquery.serialcookie.min.js" type="text/javascript"></script>
+<script src="jquery.serialcookie.min.js"></script>
 <link href="jquery.serialcookie.css" type="stylesheet">
 ```
 Due to the lightweight CSS code, it's recommended to copy/paste the CSS code into your general stylesheet.
