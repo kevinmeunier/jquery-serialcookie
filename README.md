@@ -49,7 +49,7 @@ Name               | Type       | Default                             | Descript
 lanug              | *string*   | *'auto'*                            | The autodetection is based on the LANG attribute of the HTML tag
 callback           | *function* | *'function(isAccepted){}'*          | Essential fn to call the script that are using cookies
 template           | *string*   | *'<div id="serialcookie">+[...]'*   | The HTML template where the translations will be injected
-translations       | *object*   | *'{ en: '', fr: '', [...] }'*       | The translations in each language
+translations       | *object*   | *'{ en: '{[...]}, fr: '{[...]}, [...]'*  | The translations in each language
 
 
 ## Bugs / Feature request
