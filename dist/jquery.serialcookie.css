@@ -1,0 +1,14 @@
+/* JavaScript: serialcookie */
+#serialcookie{position:fixed;right:0;bottom:0;left:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:25px;background-color:#fff;font-size:14px;color:#000;text-align:center;line-height:1.5;}
+#serialcookie-col-1{}
+#serialcookie-col-2{display:flex;margin-left:50px;}
+#serialcookie-reject, #serialcookie-accept{padding:15px 20px;cursor:pointer;transition:300ms;}
+#serialcookie-reject{border:2px solid rgba(0, 0, 0, .2);color:#000;}
+#serialcookie-reject:hover{border-color:rgba(0, 0, 0, .3);}
+#serialcookie-accept{margin-left:20px;background-color:#000;color:#fff;}
+#serialcookie-accept:hover{transform:translateY(-3px);box-shadow:0 10px 15px rgba(0, 0, 0, .15);}
+
+@media (max-width:640px){
+  #serialcookie{flex-wrap:wrap;}
+  #serialcookie-col-2{margin-left:0;margin-top:20px;}
+}

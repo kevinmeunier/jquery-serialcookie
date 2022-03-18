@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://github.meunierkevin.com/assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+<link href="https://github.meunierkevin.com/assets/css/site-all.css" rel="stylesheet">
+<script src="https://github.meunierkevin.com/assets/js/jquery.min.js"></script>
+<script src="https://github.meunierkevin.com/assets/js/site-all.js"></script>
+<title>jQuery serialcookie — Meunier Kévin</title>
+</head>
+<body>
+
+<script>writeHeader('serialcookie');</script>
+
+<div id="section-demonstration-js">
+  <script src="dist/jquery.serialcookie.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // jquery.serialcookie initialisation
+    $.serialcookie({
+      callback: function(isAccepted){
+        if( isAccepted ){
+          // Google Analytics
+          console.log('Loading Google Analytics script..');
+        }
+      }
+    });
+  });
+  </script>
+</div>
+<div id="section-demonstration-css">
+  <style type="text/css">
+  /* JavaScript: serialcookie */
+  #serialcookie{position:fixed;right:0;bottom:0;left:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:25px;background-color:#fff;font-size:14px;color:#000;text-align:center;line-height:1.5;}
+  #serialcookie-col-1{}
+  #serialcookie-col-2{display:flex;margin-left:50px;}
+  #serialcookie-reject, #serialcookie-accept{padding:15px 20px;cursor:pointer;transition:300ms;}
+  #serialcookie-reject{border:2px solid rgba(0, 0, 0, .2);color:#000;}
+  #serialcookie-reject:hover{border-color:rgba(0, 0, 0, .3);}
+  #serialcookie-accept{margin-left:20px;background-color:#000;color:#fff;}
+  #serialcookie-accept:hover{transform:translateY(-3px);box-shadow:0 10px 15px rgba(0, 0, 0, .15);}
+
+  @media (max-width:640px){
+    #serialcookie{flex-wrap:wrap;}
+    #serialcookie-col-2{margin-left:0;margin-top:20px;}
+  }
+  </style>
+</div>
+
+<!-- Demos HTML -->
+<script>
+if( $.serialcookie.status != undefined )
+  document.write('<span class="btn-secondary" onclick="$.removeCookie(\'serialcookie-status\', { path: \'/\' });location.reload();">Reset serialcookie</span>');
+</script>
+<!-- /Demos HTML -->
+
+<script>writeFooter('serialcookie');</script>
+
+</body>
+</html>
